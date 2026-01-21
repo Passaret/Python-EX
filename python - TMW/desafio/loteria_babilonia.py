@@ -13,22 +13,22 @@ def get_input():
                 numero_usuario = int(input("Entre com um número: "))
 
             except ValueError as err:
-                print("\nValor inválido! Entre com um número inteiro entre 1 e 15")
+                print("\nValor inválido! Entre com um número inteiro entre 1 e 15\n")
                 continue
 
             if 1 <= numero_usuario <= 15:
                 return(numero_usuario)
-            print("\nValor inválido! O valor deve ser entre 1 e 15")
+            print("\nValor inválido! O valor deve ser entre 1 e 15\n")
 
 def check_numbers(sorteio, usuario):
     if sorteio == usuario:
-        print("\nParabéns! Você venceu!\n")
+        print("\nParabéns! Você venceu!")
         return True
     elif usuario > sorteio:
-        print("\nNúmero muito alto!! Tente um Número menor!\n")
+        print("\nPalpite errado! Tente um Número menor!")
         return False
     else:
-        print("\nNúmero muito baixo!! Tente um Número maior!\n")
+        print("\nPalpite errado!! Tente um Número maior!")
         return False
 
 for i in range(3):
@@ -36,7 +36,7 @@ for i in range(3):
     if check_numbers(sorteio=numero_sorteio, usuario=numero_usuario):
         break
     if i != 2:
-        print("Você possui mais", 2-i , "tentativas restantes!\n")
+        print("Tentativas restantes:", 2-i, "\n")
 else:
     print("Suas tentativas acabaram!! \n" \
     "\nO número correto era:", numero_sorteio)
