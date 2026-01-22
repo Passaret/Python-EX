@@ -9,3 +9,16 @@ for i in range(4):
     soma += altura
 
 print(f"A soma das alturas é: {soma}")
+
+
+#%%
+# Exercicio com while
+# soma = 0
+# count = 4
+
+# while count > 0:
+#     altura = float(input("Entre com a altura:"))
+#     soma += altura
+#     count -= 1
+# print("A soma das alturas é:", soma)
+#
