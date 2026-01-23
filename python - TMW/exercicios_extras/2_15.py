@@ -4,10 +4,14 @@
 #  Solicite ao usuário um número e exiba a contagem.
 
 #%%
-lista = [1,2,3,3,2,1,1,1,1,5,6,7,7,6,5]
+
+lista = []
+user_input = input("Insira quanto números quiser separando por virgula").split(",")
+
+for i in user_input:
+    lista.append(i)
 
 numero = input("Entre com um número: ")
-numero = int(numero)
 
 count = 0
 for i in lista:
